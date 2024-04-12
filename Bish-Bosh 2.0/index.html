@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bish-Bosh 2.0</title>
+<link rel="stylesheet" href="style.css">
+<script src="bishbosh.js"></script>
+</head>
+<body>
+<header>
+    <h1>Bish-Bosh 2.0</h1>
+</header>
+
+<main>
+    <div>
+        <p>Bish-Bosh is a simple game where certain numbers are replaced with words. In this version, you can customize the numbers and length of the sequence.</p>
+    </div>
+
+    <div>
+        <label for="bishInput">Bish (First number to be replaced):</label>
+        <input type="number" id="bishInput" min="1">
+
+        <label for="boshInput">Bosh (Second number to be replaced):</label>
+        <input type="number" id="boshInput" min="1">
+
+        <label for="limitInput">Limit (How far the sequence should go):</label>
+        <input type="number" id="limitInput" min="1">
+
+        <button onclick="generateSequence()">Generate Sequence</button>
+    </div>
+
+    <div id="output">
+        <p>Generated sequence will appear here.</p>
+    </div>
+</main>
+
+<footer>
+    <p>Created by Mohanad Yousif &copy; 2024</p>
+</footer>
+</body>
+</html>

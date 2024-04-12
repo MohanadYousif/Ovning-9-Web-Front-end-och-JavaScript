@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bish-Bosh</title>
+<script>
+    function bishBosh() {
+        let result = '';
+        for (let i = 1; i <= 100; i++) {
+            if (i % 3 === 0 && i % 4 === 0) {
+                result += "Bish-Bosh, ";
+            } else if (i % 3 === 0) {
+                result += "Bish, ";
+            } else if (i % 4 === 0) {
+                result += "Bosh, ";
+            } else {
+                result += i + ', ';
+            }
+        }
+        // Remove the last comma and print
+        console.log(result.slice(0, -2));
+    }
+    
+    // Call the function to start
+    bishBosh();
+    </script>
+</head>
+<body>
+</body>
+</html>
